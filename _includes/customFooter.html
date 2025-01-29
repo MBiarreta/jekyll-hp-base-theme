@@ -2,6 +2,13 @@
 
 <div class="footer">
   <div>
+    <div class="footer-column">
+      <p class="footer-column-name">CONTACTO</p>
+      <div class="footer-description">
+        maria.mora@itcr.com
+      </div>
+  </div>
+  <!--<div>
     {% if page.layout != 'index' and page.lang-ref%}
       {% assign posts = site.posts | where: "lang-ref", page.lang-ref | sort: 'lang' %}
       {% if posts.size == 0 %}
@@ -16,7 +23,7 @@
             <a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }}" title="View in {{post.lang}}">
               <!-- {% if site.data.languages[post.lang].icon %}
               <img src="{{ site.data.languages[post.lang].icon }}" style="margin-right: 6px; height:1em;" />
-              {% endif %} -->
+              {% endif %} --
               {{ site.data.languages[post.lang].label }}
             </a>
           </li>
@@ -25,7 +32,7 @@
       </div>
       {% endif %}
     {% endif %}
-  </div>
+  </div>-->
   <div>
     <div class="footer-groups">
       {% for col in footer.columns %}
