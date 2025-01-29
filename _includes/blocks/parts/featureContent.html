@@ -12,11 +12,14 @@
 {% if license or preTitle or title or description or cta %}
 <div class="feature-content {% if center %} feature-content--centered {% endif %}">
   <div class="feature-text">
-    {% if href %}<a href="{{ href }}" {% if blankTarget %}target="_blank"{% endif %} class="feature-overlay"></a>{% endif %}
+    {% if href %}
+        <a href="{{ href }}" {% if blankTarget %}target="_blank"{% endif %} class="feature-overlay"></a>
+    {% endif %}
     {% if license %} 
-    <div class="feature-license">{{ license }}</div>
+        <div class="feature-license">{{ license }}</div>
+    {% endif %}
     {% if preTitle %} 
-    <div class="feature-pre-title">{{ preTitle }}</div>
+        <div class="feature-pre-title">{{ preTitle }}</div>
     {% endif %}
     
     {% if title %}
