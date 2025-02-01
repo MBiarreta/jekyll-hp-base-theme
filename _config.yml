@@ -46,7 +46,7 @@ algae:
     square: true
     colors:
       primary: "#4787fb"
-      links: "#4787fb"
+      links: "#0375B1"
     coloredHeadlineLinks: false
   navbar:
     # brandBackground: yellow
