@@ -45,7 +45,7 @@ algae:
   style:
     square: true
     colors:
-      primary: "#4787fb"
+      primary: "#0375B1"
       links: "#0375B1"
     coloredHeadlineLinks: false
   navbar:
