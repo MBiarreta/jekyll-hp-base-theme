@@ -27,37 +27,37 @@ themeFeedback.push({title: "Missing navigation", description: "You haven't confi
   role="navigation" aria-label="main navigation">
   {% if site.testSite %}<div class="testSiteBanner"></div>{% endif %}
   <div class="navbar-content">
-    <div class="navbar-brand">
-      <a class="navbar-item navbar-logo" href="{{ '/' | append: homeLang | relative_url }}">
-        {% if logo %}
-          <img class="navbar-logo_img" src="{{ logo | relative_url }}" alt="{{site.title | escape}} - {{homeText | escape}}" height="60" />
-        {% if site.title and site.algae.logoAndTitle %}
-          <span class="navbar-logo_text">{{ site.title }}</span>
-        {% endif %}
-        {% else %}
-          <span class="navbar-item navbar-logo_text">{{ site.title }}</span>
-        {% endif %}
-      </a>
-
-      {% if navigation %}
-        <a
-          role="button"
-          id="navbarBurger"
-          class="navbar-burger burger menu-toggle"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="mainNavbar"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      {% endif %}
-    </div>
-
     {% if navigation %}
-    <div id="mainNavbar" class="navbar-menu">
-      <div class="navbar-start">
+      <div id="mainNavbar" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-brand">
+        <a class="navbar-item navbar-logo" href="{{ '/' | append: homeLang | relative_url }}">
+          {% if logo %}
+            <img class="navbar-logo_img" src="{{ logo | relative_url }}" alt="{{site.title | escape}} - {{homeText | escape}}" height="60" />
+          {% if site.title and site.algae.logoAndTitle %}
+            <span class="navbar-logo_text">{{ site.title }}</span>
+          {% endif %}
+          {% else %}
+            <span class="navbar-item navbar-logo_text">{{ site.title }}</span>
+          {% endif %}
+        </a>
+
+        {% if navigation %}
+          <a
+            role="button"
+            id="navbarBurger"
+            class="navbar-burger burger menu-toggle"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="mainNavbar"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        {% endif %}
+        </div>
+
         {% for item in navigation %}
           {% if item.menu %}
           <div class="navbar-top-item navbar-item has-dropdown is-hoverable">
