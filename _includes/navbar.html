@@ -28,9 +28,10 @@ themeFeedback.push({title: "Missing navigation", description: "You haven't confi
   {% if site.testSite %}<div class="testSiteBanner"></div>{% endif %}
   <div class="navbar-content"> 
      <div class="navbar-brand">
-        <a class="navbar-item navbar-logo" href="{{ '/' | append: homeLang | relative_url }}">
-          {% if site.title %}
-            {% if site.algae.logoAndTitle %}
+        <a class="navbar-item navbar-logo" id="navbar-logo-brand" href="{{ '/' | append: homeLang | relative_url }}">
+          {% if logo %}
+          <img class="navbar-logo_img" src="{{ logo | relative_url }}" alt="{{site.title | escape}} - {{homeText | escape}}" height="60" />
+            {% if site.title and site.algae.logoAndTitle %}
               <span class="navbar-logo_text">{{ site.title }}</span>
             {% endif %}
           {% else %}
