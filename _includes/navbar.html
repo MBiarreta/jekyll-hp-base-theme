@@ -19,6 +19,20 @@ themeFeedback.push({title: "Missing navigation", description: "You haven't confi
 </script>
 {% endunless %}
 
+<style>
+  @media only screen and (min-width: 1024px) { 
+    .navbar-logo-brand {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar-logo-start {
+        display: none;
+    }
+}
+</style>
+
 <nav class="navbar 
   {% if floating %} navbar--floating{% endif %} 
   {% if hasWhiteText %} navbar--hasWhiteText{% endif %} 
