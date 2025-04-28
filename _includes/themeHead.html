@@ -86,9 +86,7 @@
 
   {% include head.html %}
   
-  {% if site.google_analytics and jekyll.environment == 'production' %}
-    {% include analytics.html %}
-  {% endif %}
+  {% include analytics.html %}
 
   {% if page.head %}
     {{ page.head }}
