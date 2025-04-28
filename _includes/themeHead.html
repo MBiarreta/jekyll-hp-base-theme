@@ -85,6 +85,10 @@
   {% include favicon.html %}
 
   {% include head.html %}
+  
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
 
   {% if page.head %}
     {{ page.head }}
